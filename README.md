@@ -1,6 +1,15 @@
 # KerbalDefaults
+
 Addon for [Kerbal Space Program](http://kerbalspaceprogram.com)
 
-Adds the ability to set some default values for new kerbals.
+Features
+----------------------------
+* Set default suit (Default, Vintage & Future)
+* Set default name for the original 4 Kerbals (Jebediah, Bill, Bob & Valentina)
 
-Currently only supports the ability to specify which suit new kerbals should use (Default, Vintage, Future).
+Default suit will only be applied to new games and when applicants are added.
+
+Installation
+----------------------------
+* Copy the contents of GameData into the GameData folder in your KSP installation directory.
+* Start a game.
