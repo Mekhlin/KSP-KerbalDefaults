@@ -19,7 +19,7 @@ namespace KerbalDefaults
 
         private void OnKerbalAdded(ProtoCrewMember kerbal)
         {
-            if (Settings.preserveOriginalNames == false)
+            if (Settings.PreserveOriginalNames == false)
             {
                 DefaultNames.ApplyName(kerbal);
             }

@@ -12,15 +12,15 @@ namespace KerbalDefaults
         {
             try
             {
-                if (string.IsNullOrEmpty(Settings.suitName) || Settings.suitName == "Default") return;
-                if (SuitNames.Contains(Settings.suitName) == false) return;
+                if (string.IsNullOrEmpty(Settings.SuitName) || Settings.SuitName == "Default") return;
+                if (SuitNames.Contains(Settings.SuitName) == false) return;
 
-                var kerbalSuit = (ProtoCrewMember.KerbalSuit)Enum.Parse(typeof(ProtoCrewMember.KerbalSuit), Settings.suitName);
+                var kerbalSuit = (ProtoCrewMember.KerbalSuit)Enum.Parse(typeof(ProtoCrewMember.KerbalSuit), Settings.SuitName);
                 kerbal.suit = kerbalSuit;
             }
             catch (Exception ex)
             {
-                Debug.LogError($"[KerbalDefaults] Failed to set suit on new Kerbal. SuitName:{Settings.suitName} - StackTrace:{ex.StackTrace}");
+                Debug.LogError($"[KerbalDefaults] Failed to set suit on new Kerbal. SuitName:{Settings.SuitName} - StackTrace:{ex.StackTrace}");
             }
         }
     }

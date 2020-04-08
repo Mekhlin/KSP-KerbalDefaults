@@ -4,7 +4,7 @@
     {
         public static void ApplyName(ProtoCrewMember kerbal)
         {
-            if (Settings.preserveOriginalNames || kerbal.veteran == false)
+            if (Settings.PreserveOriginalNames || kerbal.veteran == false)
             {
                 return;
             }
@@ -17,8 +17,8 @@
 
         private static bool RenameKerbal(ProtoCrewMember kerbal, string name, string key)
         {
-            if (kerbal.name != name || Settings.kerbalNames.ContainsKey(key) == false) return false;
-            return kerbal.ChangeName(Settings.kerbalNames[key]);
+            if (kerbal.name != name || Settings.KerbalNames.ContainsKey(key) == false) return false;
+            return kerbal.ChangeName(Settings.KerbalNames[key]);
         }
     }
 }

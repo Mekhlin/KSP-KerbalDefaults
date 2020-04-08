@@ -5,10 +5,10 @@ namespace KerbalDefaults
     internal static class Settings
     {
         // Default suit
-        internal static string suitName = "";
+        internal static string SuitName = "";
         
         // Names
-        internal static bool preserveOriginalNames = true;
-        internal static Dictionary<string, string> kerbalNames = new Dictionary<string, string>();
+        internal static bool PreserveOriginalNames = true;
+        internal static Dictionary<string, string> KerbalNames = new Dictionary<string, string>();
     }
 }
